@@ -10,18 +10,21 @@ public class bucles13{
     Scanner leer=new Scanner(System.in);
     
     int num=0;
+    int canp=0;
+    int cann=0;
     
     for(int i=1; i<=10; i++){
       System.out.println("Introduce un número");
       
       num=leer.nextInt();
       if(num<0){
-        System.out.println("El número es negativo.");
+        canp=canp+1;
       }else{
-        System.out.println("El número es positivo.");
+        cann=cann+1;
         
       }
     }
+    System.out.println("Hay "+canp+" números positivos y "+cann+" números negativos");
     
     
   }

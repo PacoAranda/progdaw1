@@ -14,7 +14,7 @@ public class bucles11{
     System.out.println("Introduce un número: ");
     num=leer.nextInt();
     int numtope=num+5;
-    for(int i=num; i<numtope; i++){
+    for(int i=num; i<=numtope; i++){
       System.out.printf("%-10s %-10s %-10s\n",i,i*i,i*i*i);
       
     }
