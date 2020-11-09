@@ -5,7 +5,7 @@
  * @author PacoAranda
  */
 import java.util.Scanner;
-public class aleatorios2{
+public class aleatorios3{
   public static void main (String[] args){
     Scanner leer=new Scanner(System.in);
     int num=0;
@@ -16,39 +16,41 @@ public class aleatorios2{
     numpalo=(int)(Math.random()*4+1);
     switch (numpalo){
       case 1:
-        palo="tréboles";
+        palo="bastos";
         break;
       case 2:
-        palo="corazones";
+        palo="espadas";
         break;
       case 3:
-        palo="picas";
+        palo="copas";
         break;
       case 4:
-        palo="rombos";
+        palo="oros";
         break;
       default:
     }
     
-    num=(int)(Math.random()*13+1);
+    num=(int)(Math.random()*10+1);
     switch (num){
       case 1:
-        numero="As";
+        numero="as";
+        break;
+      case 10:
+        numero="sota";
         break;
       case 11:
-        numero="J";
+        numero="caballo";
         break;
       case 12:
-        numero="Q";
-        break;
-      case 13:
-        numero="K";
+        numero="rey";
         break;
       default:
         numero=String.valueOf(num);
     }
     
     System.out.print("Tu carta es el "+numero+" de "+palo);
+    
+    
     
   }
   
